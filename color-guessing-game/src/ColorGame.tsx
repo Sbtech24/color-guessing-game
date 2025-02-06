@@ -90,7 +90,7 @@ const ColorGame = () => {
       ) : (
         <>
           <h1 className="game-title">Color Guessing Game</h1>
-          <p className="game-instructions">Guess the correct shade!</p>
+          <p className="game-instructions" data-testid="gameInstructions">Guess the correct shade!</p>
           <p>You have to get 50 points in 5mins to win the game 🙃 </p>
 
           <div data-testid="colorBox" className="color-box" style={{ backgroundColor: targetColor }}></div>
@@ -108,10 +108,10 @@ const ColorGame = () => {
             ))}
           </div>
 
-          <p className="score">Score: {score}</p>
+          <p className="score" data-testid="score">Score: {score}</p>
           <p className="timer">Time Left: {Math.floor(timer / 60)}:{(timer % 60).toString().padStart(2, '0')}</p>
 
-          <button className="new-game-button" onClick={resetGame}>Reset Score</button>
+          <button className="new-game-button" data-testid="newGameButton" onClick={resetGame}>Reset Score</button>
         </>
       )}
     </div>
