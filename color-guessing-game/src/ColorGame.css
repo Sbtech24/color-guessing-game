@@ -1,0 +1,78 @@
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  /* Color Box */
+  .color-box {
+    width: 120px;
+    height: 120px;
+    border: 4px solid #333;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  /* Color Options */
+  .color-options {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .color-button {
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .color-button:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Score */
+  .score {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Timer */
+  .timer {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: red;
+  }
+  
+  /* New Game Button */
+  .new-game-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .new-game-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Game Over & Win Screens */
+  .game-over, .game-win {
+    text-align: center;
+  }
+  
